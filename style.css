@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(175, 197, 197);
+}
+
+main {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left-color: green;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-right-color: green;
+  border-right-style: solid;
+  border-right-width: 5px;
+
+  background-color: rgba(127, 255, 212, 0.397);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+#btn,
+#input-email,
+#input-password {
+  width: 100%;
+}
+
+#input-email,
+#input-password {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  background-color: lightseagreen;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#input-email::placeholder,
+#input-password::placeholder {
+  color: white;
+}
+
+#btn {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: lightgreen;
+  cursor: pointer;
+  transition: ease 1;
+  color: black;
+  text-transform: uppercase;
+}
+
+#btn:hover {
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+#message {
+  text-align: center;
+  color: green;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+figure {
+  position: absolute;
+  top: 0;
+  left: 620px;
+  padding-top: 30px;
+}
+
+i {
+  font-size: 50px;
+  padding-right: 10px;
+  color: green;
+  cursor: pointer;
+  transition: opacity .5 ease;
+}
+
+i:hover {
+  opacity: .8;
+}

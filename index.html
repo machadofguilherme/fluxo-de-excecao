@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fluxo de Exceção</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
 </head>
+
 <body>
-  <form action="">
-    <label for="input-email">E-Mail: </label>
-    <input type="email" name="email" id="input-email">
-    <label for="input-password">Senha: </label>
-    <input type="password" name="password" id="input-password">
-    <button type="submit" id="btn">Entrar</button>
-  </form>
-  <p id="message"></p>
-  <script src="script2.js"></script>
+  <main>
+    <figure>
+      <a href="https://www.linkedin.com/in/machadodev/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/machadofguilherme/" target="_blank"><i class="bi bi-github"></i></a>
+    </figure>
+    <form action="">
+      <input type="email" name="email" id="input-email" autocomplete="off" placeholder="Digite seu e-mail">
+      <input type="password" name="password" id="input-password" placeholder="Digite sua senha">
+      <button type="submit" id="btn">Entrar</button>
+    </form>
+    <p id="message"></p>
+  </main>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
