@@ -22,7 +22,7 @@ const lengthInput = (inputPassword) => {
 }
 
 const containAt = (inputEmail) => {
-  if (inputEmail.value.indexOf('@') < 3) {
+  if (inputEmail.value.indexOf('@') < 3 || inputEmail.value.includes('.com', '.com.br')) {
     throw Error("Digite um e-mail válido. Seu nome de usuário deve conter mais que 3 caracteres.");
   }
 }
