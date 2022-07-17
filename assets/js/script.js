@@ -28,27 +28,20 @@ const containAt = (inputEmail) => {
 }
 
 const checkError = (inputEmail, inputPassword) => {
-  
   emptyInput(inputEmail, inputPassword);
   spaceInput(inputEmail, inputPassword);
   lengthInput(inputPassword);
   containAt(inputEmail);
-  
 };
 
 btnLogin.addEventListener("click", (e) => {
   e.preventDefault();
-  
   try {
     checkError(inputEmail, inputPassword);
     message.innerHTML = `${inputEmail.value} ${inputPassword.value}`;
-
   } catch (error) {
     message.innerHTML = `${error.message}`;
-
   } finally {
     (inputEmail.value = ""), (inputPassword.value = "");
-
   }
-
 });
